@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horse Riding</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <!--Navbar-->
+    <nav class="navbar">
+        <h1 class="logo">KYRGYZ TRAILS</h1>
+        <ul class="nav-links">
+            <li><button id="Home">Home</button></li>
+            <li><button id="service">Service</button></li>
+            <li><button id="trails">Trails</button></li>
+            <li><button id="feature">Feature</button></li>
+            <!-- <li><button id="contact">Contact Us</button></li> -->
+        </ul> 
+        <img src="./img/menu-btn.webp" alt="" class="menu-btn">
+    </nav>
+
+    <header>
+        <div class="header-content">
+            <h2>Discover Kyrgyzstan on Horseback with </h2>
+            <div class="line"></div>
+            <h1>Kyrgyz Trails</h1>
+            <a href="https://asiamountains.net/en/adventures/" class="ctn"> Learn More</a>
+        </div>
+    </header>
+
+        <!-- Event-->
+    <section id="explore" class="service">
+        <div class="title">
+            <h1>Explore Our Services</h1>
+            <div class="line"></div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <img src="./img/image2.jpg" alt="img1">
+                <h4>Guided Equestrian Tours</h4>
+                <p>Journey through the heart of Kyrgyzstan's stunning landscapes with our expertly led tours. Our guides will take you along scenic paths and share insights into the rich cultural heritage of the regions you explore.</p>
+                <a href="https://asiamountains.net/en/adventures/" class="ctn">Learn More</a>
+            </div>
+            <div class="col">
+                <img src="./img/image2.jpg" alt="img2">
+                <h4>Tailor-Made Adventures</h4>
+                <p>Customize your own horseback riding adventure to suit your interests and abilities. From choosing the duration and route to focusing on specific skills or sights, we help you design the perfect outing.</p>
+                <a href="#" class="ctn">Learn More</a>
+            </div>
+        </div>
+    </section>
+    <section id="welcome" class="trails">
+        <div class="trails-content">
+            <h1>Welcome to Kyrgyz Trails</h1>
+            <div class="line"></div>
+            <p>Your Gateway to Horseback Adventures in Kyrgyzstan.Embark on a journey through the stunning landscapes of Kyrgyzstan from the unique vantage point of a horseback. At Kyrgyz Trails, we specialize in providing exceptional equestrian experiences for riders of all skill levels. Navigate through tranquil lakes, rugged mountains, and vibrant green pastures in the heart of Central Asia.</p>     
+        <a href="https://asiamountains.net/en/adventures/" class="ctn">Learn More</a>
+    </div>
+    </section> 
+
+    <!--TOURS-->
+    <section id="advantage" class="feature">
+        <div class="row">
+            <div class="col content-col">
+                <h1>Why Choose Kyrgyz Trails?</h1>
+                <div class="line"></div>
+                <p>
+                    <li>Experienced Guides and Gentle Horses: Our knowledgeable guides and well-trained horses ensure a safe and enjoyable ride for all.</li> 
+                    <li>Year-Round Adventures: Our trails are open throughout the year, allowing you to experience Kyrgyzstan's beauty in every season.</li>
+                    <li>Special Group and Family Packages: We offer tailored packages that make it easy and affordable to enjoy horseback riding with your group or family.</li>
+                 </p>
+                <a href="https://asiamountains.net/en/adventures/" class="ctn">Learn More</a>
+            </div>
+            <div class="col image-col">
+                <div class="image-gallery">
+                    <img src="./img/gallery.4img.jpg" alt="img1">
+                    <img src="./img/gallery.1img.jpg" alt="img2">
+                    <img src="./img/gallery.2img.jpg" alt="img3">
+                    <img src="./img/gallery.3img.jpg" alt="img4">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- <section id="advantage" class="feature">
+        <div class="row">
+            <div class="col content-col">
+                <h1>Get in Touch</h1>
+            <div class="line"></div>
+            <p>We'd love to hear from you! Whether you have a question about our services, need assistance, or you're in the neighborhood and want to check in, don't hesitate to reach out.</p>     
+            <li> Visit Our Office: <a href="#">Ankara Street 10/8, Bishkek, Kyrgyzstan</a></li>
+                <ul>Office Hours:</ul>
+                <ul>Monday - Friday: 9:00 AM - 5:00 PM</ul>
+                <ul>Saturday: 10:00 AM - 3:00 PM</ul>
+                <ul>Sunday: Closed</ul></li>
+                <li>Give Us a Call:
+                    <ul>+996 312 555 1234</ul></li>
+                    <li>Email Your Queries:
+                        support@example.com</li>
+            <p>We are here to assist you and look forward to connecting!</p>
+        <a href="https://asiamountains.net/en/adventures/" class="ctn">Learn More</a>
+            </div>
+        </div>
+    </section> -->
+
+
+    <section class="footer">
+        <p>Ankara Street 1/8, Bishkek, Kyrgyzstan | Phone: +996777123456 | E-mail:kyrgyz.trails@gmail.com</p>
+        <p>c© 2024 Kyrgyz Trails. All rights reserved. </p>
+    </section>
+
+    <script>
+         const menuBtn = document.querySelector('.menu-btn')
+         const navlinks = document.querySelector('.nav-links')
+
+         menuBtn.addEventListener('click',()=>{
+             navlinks.classList.toggle('mobile-menu')
+         })
+         const serviceBtn = document.getElementById("service")
+         serviceBtn.onclick = () => {
+             document.getElementById('explore').scrollIntoView({
+             behavior: 'smooth'
+             })
+         }
+        const trailsBtn = document.getElementById("trails")
+        trailsBtn.onclick = () => {
+            document.getElementById('welcome').scrollIntoView({
+            behavior: 'smooth'
+            })
+        }
+        const featureBtn = document.getElementById("feature")
+        featureBtn.onclick = () => {
+            document.getElementById('advantage').scrollIntoView({
+            behavior: 'smooth'
+            })
+        }
+    </script>
+</body>
+</html>
